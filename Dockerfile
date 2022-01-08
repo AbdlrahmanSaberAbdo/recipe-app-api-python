@@ -20,3 +20,6 @@ RUN adduser -D user
 
 # switch docker to the user that we created it, create sperate user for our app it's more secure
 USER user
+
+# Port to expose
+EXPOSE 8000
