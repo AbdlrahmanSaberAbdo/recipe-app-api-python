@@ -20,7 +20,7 @@ class PublicIngredientApiTests(TestCase):
         """Test that login required for retrieving tags"""
         res = self.client.get(INGREDIENTS_URL)
 
-        self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
 class PrivateIngredientsApiTests(TestCase):
     """Test the private ingredients API"""
