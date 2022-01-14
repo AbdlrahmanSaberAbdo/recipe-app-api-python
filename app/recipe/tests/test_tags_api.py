@@ -52,7 +52,7 @@ class PrivateTagsApiTests(TestCase):
     def test_tags_limited_to_user(self):
         """Test that tags returned are for authenticated user"""
         user2 = get_user_model().objects.create_user(
-            'other@londonappdev.com',
+            'other@example.com',
             'testpass'
         )
         Tag.objects.create(user=user2, name='Fruity')
@@ -76,7 +76,7 @@ class PrivateTagsApiTests(TestCase):
 
         self.assertTrue(exists)
 
-    def tes_create_tag_invalude(self):
+    def tes_create_tag_invalid(self):
         """Test creating a new tag with invalid payload"""
         payload = {'name': ''}
         res = self.client.post(TAGS_URL, payload)
