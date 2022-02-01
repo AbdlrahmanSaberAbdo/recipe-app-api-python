@@ -1,2 +1,6 @@
-# recipe-app-api-python
-Recipe app api source code.
+# Description
+Recipe app api
+
+# Getting start
+- run `docker-conpose up -d`
+- enjoy
