@@ -2,5 +2,5 @@
 Recipe app api
 
 # Getting start
-- run `docker-conpose up -d`
+- run `docker-conpose up`
 - enjoy
